@@ -1,0 +1,232 @@
+.main {
+  padding-top: 52px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main-text {
+      font-family: PoppinsBold, sans-serif;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 104%;
+      text-transform: uppercase;
+      text-align: center;
+      color: #162c4e;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      opacity: 0.39;
+      margin-bottom: 8px;
+      max-width: 850px;
+    }
+
+    .small-main-text {
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.8);
+      max-width: 400px;
+      margin-bottom: 32px;
+    }
+
+    .time {
+      width: 588px;
+      margin-bottom: 72px;
+
+      .time-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+
+        .time-dots {
+          font-family: PoppinsSemiBold, sans-serif;
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 100%;
+          color: #162c4e;
+        }
+
+        .time-block {
+          font-family: PoppinsSemiBold, sans-serif;
+          width: 132px;
+          display: flex;
+          justify-content: center;
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 100%;
+          color: #162c4e;
+        }
+      }
+
+      .time-2 {
+        display: flex;
+        justify-content: space-between;
+
+        .info-time {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 132px;
+          height: 54px;
+          background-image: url("../../../assets/images/time.png");
+          background-size: cover;
+          background-position: center;
+
+
+          .text-time {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: #fff;
+
+          }
+
+          .text-time-short {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    .main-link-text {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 150%;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .main-link {
+      display: flex;
+      justify-content: flex-end;
+      border-radius: 40px;
+      width: 240px;
+      height: 60px;
+      background: #1d4169;
+      margin-bottom: 76px;
+
+
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-left: 46px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+  }
+}
+
+/*768-1200*/
+@media screen and (max-width: 1200px) {
+  .main {
+    padding-top: 126px;
+
+    .container {
+
+      .main-text {
+        font-size: 36px;
+        margin-bottom: 20px;
+        max-width: 500px;
+      }
+
+      .small-main-text {
+        font-size: 16px;
+        margin-bottom: 40px;
+        max-width: 270px;
+      }
+
+      .time {
+        width: 358px;
+        margin-bottom: 40px;
+
+        .time-1 {
+          margin-bottom: 10px;
+
+          .time-dots {
+            font-size: 36px;
+          }
+
+          .time-block {
+            width: 64px;
+            font-size: 36px;
+          }
+        }
+
+        .time-2 {
+
+          .info-time {
+            width: 64px;
+            height: 40px;
+            background-image: url("../../../assets/images/time768.png");
+
+            .text-time {
+              display: none;
+
+            }
+
+            .text-time-short {
+              display: block;
+              font-size: 12px;
+              line-height: 100%;
+              color: #fff;
+            }
+          }
+        }
+
+      }
+
+      .main-link-text {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      .main-link {
+        margin-bottom: 169px;
+      }
+    }
+  }
+}
+
+/*360-768*/
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 26px;
+
+    .container {
+
+      .main-text {
+        margin-bottom: 16px;
+        max-width: 320px;
+      }
+
+      .small-main-text {
+        max-width: 286px;
+      }
+
+      .time {
+        width: 310px;
+
+      }
+
+      .main-link-text {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      .main-link {
+        margin-bottom: 86px;
+      }
+    }
+  }
+}
